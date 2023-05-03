@@ -23,10 +23,6 @@ function onResponse(response) {
     const titolospotify = document.getElementById('titolospotify');
     titolospotify.innerHTML= 'playlist a tema ' + city;
      console.log(city);
-    for(let result of results) {
-       console.log(result['fsq_id']+' questo e un result');
-       }
-  
     if(results.length == 0)
     {
      const errore = document.createElement("h1"); 
